@@ -1,6 +1,6 @@
 main #cover  {
     position: relative;
-    height: calc(100vh - 60px);
+    height: calc(100vh - 260px);
 }
 
 main #cover  img {
