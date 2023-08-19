@@ -2,29 +2,31 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="ie=edge" http-equiv="X-UA-Compatible">
     <title>Talentera</title>
 
-    <link rel="stylesheet" href="./styles/index.css"/>
-    <link rel="stylesheet" href="./styles/header.css"/>
-    <link rel="stylesheet" href="./styles/cover.css"/>
-    <link rel="stylesheet" href="./styles/contact.css"/>
-    <link rel="stylesheet" href="./styles/footer.css"/>
+    <link href="./styles/index.css" rel="stylesheet"/>
+    <link href="./styles/header.css" rel="stylesheet"/>
+    <link href="./styles/cover.css" rel="stylesheet"/>
+    <link href="./styles/contact.css" rel="stylesheet"/>
+    <link href="./styles/footer.css" rel="stylesheet"/>
+    <link href="./styles/our-team.css" rel="stylesheet"/>
+    <link href="./styles/our-works.css" rel="stylesheet"/>
 </head>
 <body>
 <header>
     <div class="container">
         <div class="brand">
             <h2>
-                <img src="./assets/house.svg" alt="logo" class="logo"/>
+                <img alt="logo" class="logo" src="./assets/house.svg"/>
                 <span>Logo</span>
             </h2>
         </div>
 
         <div class="mobile-nav">
-            <a href="#" class="open-menu">
-                <img src="./assets/menu.svg" alt="menu" class="menu-icon"/>
+            <a class="open-menu" href="#">
+                <img alt="menu" class="menu-icon" src="./assets/menu.svg"/>
             </a>
         </div>
 
@@ -63,64 +65,85 @@
             </ul>
         </nav>
 
-        <img src="assets/search.svg" class="search-icon" alt="search-icon">
+        <img alt="search-icon" class="search-icon" src="assets/search.svg">
     </div>
 </header>
 
 <main>
     <section id="cover">
-        <img src="assets/cover.png" alt="cover">
+        <img alt="cover" src="assets/cover.png">
         <span class="cover-text">
             Talentera
         </span>
     </section>
-    <section id="team"></section>
-    <section id="work"></section>
-    <section id="contact">
-        <div class="contact-info">
-            <h2>Contact Us</h2>
-            <p>
-            <h3>Address</h3>
-            <span>swing by for a  cup of coffee, or whatever</span>
-            <p>
-                <img src="assets/address.svg" alt="location"/>
-                <span>Amman, Jordan</span>
-            </p>
-            <p>
-                <img src="assets/phone.svg" alt="phone"/>
-                <span>+962 79 0000000</span>
-            </p>
-            <p>
-                <img src="assets/mail.svg" alt="mail"/>
-                <span> <a href="mailto:test@test.com">est@test.com</a></span>
-            </p>
-        </div>
-
-        <div class="contact-form">
-            <form action="index.html" method="post">
-                <label>
-                    Name
-                    <input type="text" required/>
-                </label>
-                <label>
-                    Email
-                    <input type="email" required/>
-                </label>
-                <label>
-                    Message
-                    <textarea rows="1" required></textarea>
-                </label>
-                <div class="last-row">
-                    <div class="checkbox">
-                        <input type="checkbox" id="like-it" required/>
-                        <label for="like-it">I like it</label>
+    <section id="our-team">
+        <div class="responsive-container-block outer-container">
+            <div class="responsive-container-block inner-container">
+                <p class="text-blk section-head-text">
+                    Our Team
+                </p>
+                <p class="text-blk section-subhead-text">
+                    Meet the team - our office rats:
+                </p>
+                <div class="responsive-container-block">
+                    <div class="responsive-cell-block team-card-container">
+                        <div class="team-card">
+                            <div class="img-wrapper">
+                                <img alt="team member" class="team-img" src="assets/myPic.jpg">
+                            </div>
+                            <p class="text-blk name">
+                                Tayseer Emam
+                            </p>
+                            <p class="text-blk position">
+                                Support
+                            </p>
+                        </div>
                     </div>
-                    <button type="submit">Send</button>
-                </div>
+                    <div class="responsive-cell-block team-card-container">
+                        <div class="team-card">
+                            <div class="img-wrapper">
+                                <img alt="team member" class="team-img" src="assets/myPic.jpg">
+                            </div>
+                            <p class="text-blk name">
+                                Islam AlZatary
+                            </p>
+                            <p class="text-blk position">
+                                Web Designer
+                            </p>
+                        </div>
+                    </div>
 
-            </form>
+                    <div class="responsive-cell-block team-card-container">
+                        <div class="team-card">
+                            <div class="img-wrapper">
+                                <img alt="team member" class="team-img" src="assets/myPic.jpg">
+                            </div>
+                            <p class="text-blk name">
+                                Eman Subhi
+                            </p>
+                            <p class="text-blk position">
+                                Boss Man
+                            </p>
+                        </div>
+                    </div>
+                    <div class="responsive-cell-block team-card-container">
+                        <div class="team-card">
+                            <div class="img-wrapper">
+                                <img alt="team member" class="team-img" src="assets/myPic.jpg">
+                            </div>
+                            <p class="text-blk name">
+                                Reem Yakoub
+                            </p>
+                            <p class="text-blk position">
+                                Fixer
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+
 </main>
 
 <footer>
@@ -128,19 +151,19 @@
 
     <div class="footer-content">
         <a href="#">
-            <img src="assets/social/facebook.svg" alt="facebook"/>
+            <img alt="facebook" src="assets/social/facebook.svg"/>
         </a>
         <a href="#">
-            <img src="assets/social/twitter.svg" alt="twitter"/>
+            <img alt="twitter" src="assets/social/twitter.svg"/>
         </a>
         <a href="#">
-            <img src="assets/social/google-plus.svg" alt="google-plus"/>
+            <img alt="google-plus" src="assets/social/google-plus.svg"/>
         </a>
         <a href="#">
-            <img src="assets/social/instagram.svg" alt="instagram"/>
+            <img alt="instagram" src="assets/social/instagram.svg"/>
         </a>
         <a href="#">
-            <img src="assets/social/linkedin.svg" alt="linkedin"/>
+            <img alt="linkedin" src="assets/social/linkedin.svg"/>
         </a>
     </div>
 </footer>
