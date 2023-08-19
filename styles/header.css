@@ -1,0 +1,222 @@
+header {
+    background-color: #000000;
+}
+
+header .container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+header .container .brand {
+    min-width: 150px;
+    background: #009688;
+    height: 60px;
+    cursor: pointer;
+}
+
+header .container .brand h2 {
+    color: #FFF;
+    font-size: 28px;
+    font-weight: 900;
+    height: 60px;
+    margin-left: 20px;
+}
+
+
+header .container .brand h2 img {
+    display: inline-block;
+    width: 30px;
+    height: 100%;
+    vertical-align: middle;
+    filter: invert(1);
+}
+
+header .container .brand h2 span {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: bold;
+    vertical-align: middle;
+    align-self: center;
+
+}
+
+header .container .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90%;
+    height: 60px;
+    margin-left: 30px;
+}
+
+header .container .mobile-nav {
+    display: none;
+}
+
+header .container .search-icon {
+    font-size: 20px;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-right: 50px;
+}
+
+header .container .mobile-nav .open-menu {
+    color: #FFF;
+    text-decoration: none;
+}
+
+header .container .mobile-nav .open-menu img{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    header .container .mobile-nav {
+        display: block;
+        padding-right: 10px;
+    }
+}
+
+header .container .navbar .menu {
+    display: flex;
+    list-style-type: none;
+    gap: 30px;
+    align-items: center;
+    align-content: center;
+}
+
+header .container .navbar .menu .menu-item {
+    position: relative;
+}
+
+header .container .navbar .menu .menu-item a {
+    display: block;
+    color: #FFF;
+    text-decoration: none;
+}
+
+header .container .navbar .menu .menu-item a:hover {
+    color: #009688;
+}
+
+header .container .navbar .menu .menu-item.has-sub-menu > a {
+    position: relative;
+    padding-right: 35px;
+}
+
+header .container .navbar .menu .menu-item.has-sub-menu > a:after {
+    content: "\2B9F";
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-50%);
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header .container .navbar .menu .menu-item.has-sub-menu:hover > a:after {
+    transform: translateY(-50%) rotate(180deg);
+    color: #009688;
+}
+
+header .container .navbar .menu .menu-item.has-sub-menu .sub-menu {
+    position: absolute;
+    padding-top: 10px;
+    z-index: 999;
+    opacity: 0;
+    transform: translateY(-200px);
+    pointer-events: none;
+    transition: 0.4s ease-out;
+    width: max-content;
+    background-color: #171616;
+    list-style-type: none;
+}
+
+header .container .navbar .menu .menu-item.has-sub-menu .sub-menu .menu-item {
+    width: 100%;
+    padding: 8px;
+}
+
+header .container .navbar .menu .menu-item.has-sub-menu:hover > .sub-menu {
+    opacity: 1;
+    transform: translateY(0);
+    pointer-events: all;
+}
+
+header .container .navbar .menu .menu-item.has-sub-menu:hover > .sub-menu .sub-menu {
+    top: 0;
+    right: 100%;
+}
+
+header .container .navbar .close-menu {
+    display: none;
+    color: #FFF;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+    header .container .navbar .close-menu {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 767px) {
+
+    header .container {
+        justify-content: space-between;
+    }
+
+    header .container .search-icon{
+        display: none;
+    }
+
+    header .container .navbar {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        height: fit-content;
+        z-index: 999;
+        background-color: #222;
+        opacity: 0;
+        pointer-events: none;
+        margin-left: 0;
+        width: 100%;
+        padding:10px;
+    }
+
+    header .container .navbar.is-active {
+        opacity: 1;
+        pointer-events: all;
+    }
+
+    header .container .navbar .menu {
+        flex-direction: column;
+    }
+
+    header .container .navbar .menu .has-sub-menu > .sub-menu {
+        display: none;
+        position: relative;
+    }
+
+    header .container .navbar .menu .has-sub-menu > .sub-menu .sub-menu {
+        position: relative;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    header .container .navbar .menu .has-sub-menu:hover > .sub-menu {
+        top: 25px;
+        display: block;
+    }
+
+}
+
+
