@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Talentera</title>
 
-    <link rel="stylesheet" href="./styles/index.css" />
-    <link rel="stylesheet" href="./styles/header.css" />
-    <link rel="stylesheet" href="./styles/cover.css" />
+    <link rel="stylesheet" href="./styles/index.css"/>
+    <link rel="stylesheet" href="./styles/header.css"/>
+    <link rel="stylesheet" href="./styles/cover.css"/>
     <link rel="stylesheet" href="./styles/contact.css"/>
     <link rel="stylesheet" href="./styles/footer.css"/>
 </head>
@@ -17,14 +17,14 @@
     <div class="container">
         <div class="brand">
             <h2>
-                <img src="./assets/house.svg" alt="logo" class="logo" />
+                <img src="./assets/house.svg" alt="logo" class="logo"/>
                 <span>Logo</span>
             </h2>
         </div>
 
         <div class="mobile-nav">
             <a href="#" class="open-menu">
-                <img src="./assets/menu.svg" alt="menu" class="menu-icon" />
+                <img src="./assets/menu.svg" alt="menu" class="menu-icon"/>
             </a>
         </div>
 
@@ -63,10 +63,87 @@
             </ul>
         </nav>
 
-        <img src="assets/search.svg" class="search-icon" alt="search-icon" >
+        <img src="assets/search.svg" class="search-icon" alt="search-icon">
     </div>
 </header>
 
+<main>
+    <section id="cover">
+        <img src="assets/cover.png" alt="cover">
+        <span class="cover-text">
+            Talentera
+        </span>
+    </section>
+    <section id="team"></section>
+    <section id="work"></section>
+    <section id="contact">
+        <div class="contact-info">
+            <h2>Contact Us</h2>
+            <p>
+            <h3>Address</h3>
+            <span>swing by for a  cup of coffee, or whatever</span>
+            <p>
+                <img src="assets/address.svg" alt="location"/>
+                <span>Amman, Jordan</span>
+            </p>
+            <p>
+                <img src="assets/phone.svg" alt="phone"/>
+                <span>+962 79 0000000</span>
+            </p>
+            <p>
+                <img src="assets/mail.svg" alt="mail"/>
+                <span> <a href="mailto:test@test.com">est@test.com</a></span>
+            </p>
+        </div>
+
+        <div class="contact-form">
+            <form action="index.html" method="post">
+                <label>
+                    Name
+                    <input type="text" required/>
+                </label>
+                <label>
+                    Email
+                    <input type="email" required/>
+                </label>
+                <label>
+                    Message
+                    <textarea rows="1" required></textarea>
+                </label>
+                <div class="last-row">
+                    <div class="checkbox">
+                        <input type="checkbox" id="like-it" required/>
+                        <label for="like-it">I like it</label>
+                    </div>
+                    <button type="submit">Send</button>
+                </div>
+
+            </form>
+        </div>
+    </section>
+</main>
+
+<footer>
+    <h3>Follow us</h3>
+
+    <div class="footer-content">
+        <a href="#">
+            <img src="assets/social/facebook.svg" alt="facebook"/>
+        </a>
+        <a href="#">
+            <img src="assets/social/twitter.svg" alt="twitter"/>
+        </a>
+        <a href="#">
+            <img src="assets/social/google-plus.svg" alt="google-plus"/>
+        </a>
+        <a href="#">
+            <img src="assets/social/instagram.svg" alt="instagram"/>
+        </a>
+        <a href="#">
+            <img src="assets/social/linkedin.svg" alt="linkedin"/>
+        </a>
+    </div>
+</footer>
 
 
 <script src="main.js"></script>
